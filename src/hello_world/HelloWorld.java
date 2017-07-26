@@ -8,7 +8,13 @@ public class HelloWorld {
 
 		int i = 1;
 		while(i <= 100){
-			String a = String.valueOf(i);
+			String a;
+			if(i%3 ==0 || i%4 ==0){
+				a ="■";
+			}
+			else{
+				a = String.valueOf(i);
+			}
 			System.out.println(a);
 			i++;
 		}
